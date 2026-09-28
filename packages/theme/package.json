@@ -1,0 +1,63 @@
+{
+  "name": "atelier-theme",
+  "version": "0.1.0",
+  "description": "A neutral, customizable theme for Taiga UI with light and dark modes.",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "theme.css",
+    "theme.less"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "style": "./theme.css",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./theme.css": "./theme.css",
+    "./theme.less": "./theme.less",
+    "./package.json": "./package.json"
+  },
+  "sideEffects": [
+    "**/*.css",
+    "**/*.less"
+  ],
+  "scripts": {
+    "build": "node ../../scripts/build-theme.mjs",
+    "prepack": "node ../../scripts/build-theme.mjs"
+  },
+  "peerDependencies": {
+    "@taiga-ui/core": "~5.25.0"
+  },
+  "peerDependenciesMeta": {
+    "@taiga-ui/core": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "angular",
+    "taiga-ui",
+    "theme",
+    "css",
+    "design-tokens",
+    "dark-mode"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msamdan/atelier-ui.git",
+    "directory": "packages/theme"
+  },
+  "homepage": "https://github.com/msamdan/atelier-ui#readme",
+  "bugs": {
+    "url": "https://github.com/msamdan/atelier-ui/issues"
+  }
+}

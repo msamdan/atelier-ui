@@ -1,0 +1,133 @@
+/* Portable semantic tokens. Import after the Taiga UI theme. */
+:root {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --sidebar: #fafafa;
+  --subtle: #f7f8f8;
+  --text: #202322;
+  --muted: #818583;
+  --border: #e8eae9;
+  --hover: #f0f2f1;
+  --accent: #218563;
+  --accent-soft: #eaf5ef;
+  --accent-ink: #257a56;
+  --radius: 8px;
+  --font:
+    "Inter Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+:root[data-theme="dark"] {
+  --bg: #151817;
+  --surface: #1b1e1d;
+  --sidebar: #121513;
+  --subtle: #202421;
+  --text: #ecf0ed;
+  --muted: #939c96;
+  --border: #303732;
+  --hover: #282f2a;
+  --accent: #63be95;
+  --accent-soft: #233c2f;
+  --accent-ink: #82d8aa;
+}
+:root[data-accent="blue"] {
+  --accent: #4779cf;
+  --accent-soft: #edf3fc;
+  --accent-ink: #3266b9;
+}
+:root[data-accent="violet"] {
+  --accent: #8b5cf6;
+  --accent-soft: #f3eefe;
+  --accent-ink: #7740d0;
+}
+:root[data-accent="orange"] {
+  --accent: #da7532;
+  --accent-soft: #fcf1e9;
+  --accent-ink: #b85a1e;
+}
+:root[data-theme="dark"][data-accent="blue"] {
+  --accent: #83abed;
+  --accent-soft: #263349;
+  --accent-ink: #a2bff0;
+}
+:root[data-theme="dark"][data-accent="violet"] {
+  --accent: #b29af7;
+  --accent-soft: #342946;
+  --accent-ink: #c8b2fb;
+}
+:root[data-theme="dark"][data-accent="orange"] {
+  --accent: #e8a474;
+  --accent-soft: #433326;
+  --accent-ink: #edb58b;
+}
+:root,
+tui-root {
+  --tui-font-text: var(--font);
+  --tui-font-heading: var(--font);
+  --tui-font-text-m: normal 14px/1.5 var(--font);
+  --tui-font-text-s: normal 13px/1.5 var(--font);
+  --tui-radius-xs: 4px;
+  --tui-radius-s: var(--radius);
+  --tui-radius-m: var(--radius);
+  --tui-radius-l: var(--radius);
+  --tui-radius-xl: calc(var(--radius) + 4px);
+  --tui-background-base: var(--surface);
+  --tui-background-base-alt: var(--sidebar);
+  --tui-background-neutral-1: var(--subtle);
+  --tui-background-neutral-1-hover: var(--hover);
+  --tui-background-neutral-2: var(--border);
+  --tui-background-accent-1: var(--text);
+  --tui-background-accent-1-hover: var(--text);
+  --tui-background-accent-1-pressed: var(--text);
+  --tui-text-primary: var(--text);
+  --tui-text-secondary: var(--muted);
+  --tui-text-tertiary: var(--muted);
+  --tui-text-primary-on-accent-1: var(--bg);
+  --tui-border-normal: var(--border);
+  --tui-border-hover: var(--muted);
+  --tui-border-focus: var(--accent);
+  --tui-status-positive: var(--accent);
+  --tui-height-s: 34px;
+  --tui-height-m: 40px;
+}
+[tuiButton][data-appearance="primary"] {
+  background: var(--text);
+  color: var(--bg);
+  box-shadow: 0 1px 2px #00000010;
+}
+[tuiButton][data-appearance="outline"] {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow:
+    inset 0 0 0 1px var(--border),
+    0 1px 2px #00000004;
+}
+[tuiButton][data-appearance="flat"] {
+  background: transparent;
+  color: var(--text);
+}
+[tuiButton][data-appearance="destructive"] {
+  background: #fff0ef;
+  color: #bb463e;
+}
+[tuiButton] {
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  gap: 8px !important;
+  font-size: 12px !important;
+  border-radius: var(--radius) !important;
+}
+[tuiButton]:hover:not(:disabled) {
+  filter: brightness(0.94);
+}
+[tuiButton]:disabled {
+  opacity: 0.45;
+}
+input[tuiSwitch]:checked,
+input[tuiCheckbox]:checked,
+input[tuiRadio]:checked {
+  --tui-background-accent-1: var(--accent);
+  --tui-text-primary-on-accent-1: #fff;
+}
+tui-textfield {
+  --tui-background-base: var(--surface);
+  font-size: 13px;
+}

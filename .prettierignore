@@ -1,0 +1,10 @@
+node_modules
+dist
+packages/*/dist
+artifacts
+public/icons
+pnpm-lock.yaml
+.angular
+
+packages/theme/theme.css
+packages/theme/theme.less
