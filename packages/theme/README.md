@@ -2,20 +2,19 @@
 
 A small, reusable theme for Taiga UI: neutral surfaces, compact controls, light and dark modes, four accent palettes, and adjustable corners.
 
-**Pre-release:** this package is currently distributed as a local tarball. The name `atelier-theme` is provisional and has not been reserved or published on npm.
-
 ## Install
 
-Build and pack from the Atelier repository:
+Install the theme in your application:
+
+```sh
+pnpm add atelier-theme
+```
+
+For local development, build and pack from the [Atelier repository](https://github.com/msamdan/atelier-ui):
 
 ```sh
 pnpm install
 pnpm pack:theme
-```
-
-Install the resulting tarball in your application:
-
-```sh
 pnpm add /path/to/atelier-theme-0.1.0.tgz
 ```
 

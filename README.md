@@ -50,14 +50,10 @@ Open http://127.0.0.1:5173. Theme assets are built automatically before the demo
 
 ## Use the theme in another project
 
-The theme package is prepared for npm, **but is not published yet**. `atelier-theme` is a provisional local package name; registry ownership has not been established.
+Install [atelier-theme](https://www.npmjs.com/package/atelier-theme) from npm. The first release is `0.1.0`.
 
 ```sh
-# In this repository
-pnpm pack:theme
-
-# In your Angular application; substitute the actual path to the tarball
-pnpm add /path/to/atelier-theme-0.1.0.tgz
+pnpm add atelier-theme
 ```
 
 Load Taiga UI's base styles first, then Atelier:

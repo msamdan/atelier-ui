@@ -1,11 +1,11 @@
 # Release guide
 
-The repository is prepared for local packaging. Publishing requires an npm account, permission to the chosen package name or scope, and an explicit maintainer release decision. A GitHub username does not establish npm ownership.
+The package is published on npm as [atelier-theme](https://www.npmjs.com/package/atelier-theme). Publishing requires an authorized npm maintainer account, two-factor authentication, and an explicit maintainer release decision.
 
-## Before the first release
+## Before each release
 
-1. Confirm the final name. `atelier-theme` is a provisional workspace name, not a reserved npm name. For a scoped name, update the theme package, workspace dependency, imports, documentation, and packing scripts together.
-2. Confirm the public GitHub repository URL, then add `repository`, `homepage`, and `bugs` metadata to both package manifests. Do not advertise a repository or npm URL that does not exist.
+1. Keep the package name `atelier-theme` consistent across workspace dependencies, imports, documentation, and packing scripts.
+2. Verify that `repository`, `homepage`, and `bugs` metadata point to the public `msamdan/atelier-ui` repository.
 3. Verify the npm account and package access. Prefer npm trusted publishing once a dedicated release workflow has been reviewed; do not commit tokens.
 4. Review the package README, license, third-party notices, supported versions, and tarball contents.
 

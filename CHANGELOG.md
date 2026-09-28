@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.1.0 — 2026-09-28
 
 ### Added
 
@@ -12,4 +12,4 @@
 
 ### Status
 
-Version `0.1.0` is a local pre-release candidate. No npm release or hosted demo has been published yet.
+Published as [atelier-theme@0.1.0](https://www.npmjs.com/package/atelier-theme/v/0.1.0). The source and starter are available on [GitHub](https://github.com/msamdan/atelier-ui). A hosted demo has not been published yet.
